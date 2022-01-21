@@ -1,0 +1,16 @@
+#button1{
+    color: red;
+    background-color: yellow;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border: outset red 1px;
+}
+
+#button2{
+    color: green;
+    background-color: pink;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border: outset green 1px;
