@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Garamond, serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 15px;
+  color: blue;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 15px;  
+  border: none;
+  outline: none;
+  color: blue;
+  padding: 12px 14px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: black;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="subnav">
+    <div class="subnav-content">
+    </div>
+
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Esercizi svolti <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./Password.html">Esercizio Password</a>
+      <a href="./Repository.html">Esercizio Repository</a>
+      <a href="./randomfrasi.html">Esercizio Generatore Frasi Casuali</a>
+      <a href="./array.html">Esercizio Array Parolacce</a>
+      <a href="./lancidadi.html">Esercizio Dadi</a>
+      <a href="./tempi.html">Esercizio Tempo Bottone</a>
+      <a href="./timer.html">Esercizio Tempo con Timer</a>
+      <a href="./sfondo.html">Bottone Cambia Sfondo-Tempo</a>
+      <a href="./tempo-numeroclick.html">Esercizio Tempo e Numero Click</a>
+      <a href="./giococountdown.html">Gioco Countdown</a>
+      <a href="./giochino-codice.html">Giochino con Codice Aggiunto</a>
+      <a href="./array1.html">Esercizio 1 Array</a>
+      <a href="./array2.html">Esercizio 2 Array</a>
+      <a href="./tempiarray.html">Esercizio Tempi Array</a>
+      <a href="./esercizio3.html">Esercizio Lancia 50 Numeri</a>
+      <a href="./media.html">Esercizio Media Vettore</a>
+      <a href="./esercizio4.html">Esercizio 4</a>
+      <a href="./giocomisuraitempi.html">Gioco Misura i Tempi</a>
+      <a href="./gioco10tentativi.html">Gioco 10 Tentativi</a>
+      <a href="./esercizo5.html">Esercizio 5</a>
+      <a href="./arraycasuali.html">Array Casuali Minimo e Massimo</a>
+    </div>
+
+</body>
+</html>
