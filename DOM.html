@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio DOM</title>
+</head>
+<body>
+<ul id="Mialista">
+   <li>Gino</li>
+   <li>Giovanni</li>
+   <li>Flavio</li>
+</ul>
+
+<button onclick="aggiungiElem()">Aggiungi Elemento</button>
+
+<script>
+function aggiungiElem() {
+
+const node = document.createElement("li");
+const node1 = document.createElement("li")
+
+const textnode = document.createTextNode("Pio");
+const text = document.createTextNode("Letizia");
+
+node.appendChild(textnode);
+node1.appendChild(text);
+
+document.getElementById("Mialista").appendChild(node);
+document.getElementById("Mialista").appendChild(node1);
+
+}
+
+</script>
+
+
+
+</body>
+</html>
