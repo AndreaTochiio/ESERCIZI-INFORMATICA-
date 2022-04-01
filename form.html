@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form</title>
+  </head>
+<body>
+
+    <div class="container-fluid"><h1>HTML Form</h1></div>
+
+<form action="" name="FormPost" onSubmit="return validaForm();">
+  <label for="titolo">Titolo del Post</label>
+  <input type="text" id="titolo" name="titolo" ><br>
+  <label for="autore">Autore del Post</label>
+  <input type="text" id="autore" name="autore" ><br>
+  <label for="category">Inserisci una categoria</label>
+  <select id="category" name="category">
+      <option></option>
+      <option value="css">Css</option>
+                <option value="html">Html</option>
+                <option value="javaScript">JavaScript</option>
+                <option value="logica">Logica</option>
+                <option value="c++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Sql">Sql</option>
+                <option value="Bootstrap">Bootstrap</option>
+                <option value="Pyton">Pyton</option>
+  </select>
+  
+  <br>
+
+  <label for="autore">Post</label><br>
+  <textarea type="test" id="post" name="post" rows="10" cols="30">Inserisci il testo qui</textarea><br>
+  <label for="autore">Link</label><br>
+  <textarea type="test" id="link" name="link" rows="1" cols="30">Inserisci il link qui</textarea><br>
+  <input type="submit" value="Submit"><input type="reset">
+</form>
+
+<script>
+  function validaForm()
+  {if (document.FormPost.titolo.value=="") {
+    alert("Inserire il titolo");
+    return false;
+  }
+  if(document.FormPost.autore.value=="") {
+    alert("Inserire l'autore");
+    return false;
+  }
+  if(document.FormPost.category.value=="") {
+    alert("Inserisci la categoria");
+    return false;
+  }
+  alert("Dati inseriti correttamente");
+  return false;
+  }
+  </script>
+
+</body>
+</html>
